@@ -1,0 +1,139 @@
+@charset "utf-8";
+
+// Customization
+
+// You can easily customize Bulma with your own variables.
+// Just uncomment the following block to see the result.
+
+/*
+// 1. Import the initial variables
+@import "../node_modules/bulma/sass/utilities/initial-variables";
+
+// 2. Set your own initial variables
+// Update the blue shade, used for links
+$blue: #06bcef;
+// Add pink and its invert
+$pink: #ff8080;
+$pink-invert: #fff;
+// Update the sans-serif font family
+$family-sans-serif: "Helvetica", "Arial", sans-serif;
+
+// 3. Set the derived variables
+// Use the new pink as the primary color
+$primary: $pink;
+$primary-invert: $pink-invert;
+
+// 4. Import the rest of Bulma
+*/
+
+@import "../node_modules/bulma/bulma";
+
+body{
+    // background-image: linear-gradient( 109.6deg,  rgba(44,83,131,1) 18.9%, rgba(95,175,201,1) 91.1% );
+    color: #1B263B;
+}
+
+
+// nav.navbar {
+//     background-color: rgba(0, 0, 0, 0.5);
+// }
+
+nav a.navbar-item {
+    color: white;
+    font-weight: 600;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("../images/web-background/laptop-phone-left.jpg");
+  
+    /* Set a specific height */
+    height: 100%;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+ #about-me {
+     background-color: #e9cc9d;
+     box-shadow: 0px 1px 10px rgb(161, 161, 161);
+ }
+
+ .about-me-photo {
+     margin-right: 2em;
+ }
+
+ img.photo-profile {
+    border-radius: 25px;
+    height: 100%;
+    width: 100%;
+ }
+
+ #portfolio {
+     background-color: #C5D6D8;
+ }
+
+ #portfolio hr {
+    background-color: #000000;
+}
+
+
+aside.menu {
+    margin-top: 5em;
+}
+
+div.stack {
+    // margin-top: 4em;
+    margin-bottom: 6em;
+    min-height: 500px;
+}
+
+div.row-content {
+    padding: 1.5em;
+}
+
+div.box {
+    background-color:lightgray;
+}
+
+@media screen and (max-width: 1023px) {
+    div.row-content.row-image {
+        padding-top: 0;
+        padding-left: 0.5em;
+        padding-right: 0;
+        padding-bottom: 0.5em;
+    }
+
+    div.row-content.row-desc {
+        padding-top: 0;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+        padding-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    div.row-content.row-image {
+        padding-top: 0.5em;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+        padding-bottom: 0;
+    }
+
+    div.row-content.row-desc {
+        padding-top: 0;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+        padding-bottom: 0.5em;
+    }
+}
