@@ -64,6 +64,27 @@ nav a.navbar-item {
     padding-left: 4.5em;
 }
 
+#home {
+    position: relative;
+}
+
+@keyframes bouncing {
+    0% {bottom: 0;}
+    50% {bottom: 20px;}
+    100% {bottom: 0;}
+}
+
+.arrow {
+    animation: bouncing 1s infinite ease-in-out;
+    bottom: 0;
+    display: block;
+    height: 30px;
+    left: 50%;
+    margin-left: -25px;
+    position: absolute;
+    width: 30px;
+}
+
 
 .parallax {
     /* The image used */
@@ -113,7 +134,8 @@ nav a.navbar-item {
 
 
  #portfolio h1{
-    margin-bottom: 2em;
+    margin-top: 1em;
+    margin-bottom: 0.75em;
 }
 
 hr {
@@ -124,10 +146,6 @@ hr {
 
 div.portfolio-content {
     margin-left: 5em;
-}
-
-h1.portfolio-title {
-    margin-top: 1em;
 }
 
 aside.menu {
