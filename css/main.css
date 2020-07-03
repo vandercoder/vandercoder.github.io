@@ -7158,8 +7158,9 @@ nav a.navbar-item {
   margin-right: auto; }
 
 #about-me {
+  position: relative;
   background-color: #e9cc9d;
-  box-shadow: 0px 1px 10px #a1a1a1; }
+  box-shadow: 0px 2px 10px #525050; }
 
 .about-me-photo {
   margin-right: 2em; }
@@ -7169,11 +7170,11 @@ img.photo-profile {
   height: 100%;
   width: 100%; }
 
-#portfolio {
-  background-color: #C5D6D8; }
+div.portfolio-content {
+  margin-left: 3em; }
 
-#portfolio hr {
-  background-color: #000000; }
+h1.portfolio-title {
+  margin: 1em; }
 
 aside.menu {
   margin-top: 5em; }

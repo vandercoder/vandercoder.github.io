@@ -65,8 +65,9 @@ nav a.navbar-item {
   }
 
  #about-me {
+        position: relative;
      background-color: #e9cc9d;
-     box-shadow: 0px 1px 10px rgb(161, 161, 161);
+     box-shadow: 0px 2px 10px rgb(82, 80, 80);
  }
 
  .about-me-photo {
@@ -79,21 +80,21 @@ nav a.navbar-item {
     width: 100%;
  }
 
- #portfolio {
-     background-color: #C5D6D8;
- }
 
- #portfolio hr {
-    background-color: #000000;
+div.portfolio-content {
+    margin-left: 3em;
 }
 
+h1.portfolio-title {
+    margin: 1em;
+}
 
 aside.menu {
     margin-top: 5em;
 }
 
+
 div.stack {
-    // margin-top: 4em;
     margin-bottom: 6em;
     min-height: 500px;
 }
