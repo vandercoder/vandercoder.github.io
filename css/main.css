@@ -7148,9 +7148,10 @@ a.navbar-item:hover {
   display: none; }
 
 #nav-toggle-state:checked ~ .navbar-menu {
-  display: block;
+  display: inline;
   background: transparent;
-  text-align: right; }
+  text-align: right;
+  box-shadow: 0px 1px 2px #525050; }
 
 nav a.navbar-item {
   color: white;
