@@ -13,16 +13,16 @@
   <body>
     <section class="hero is-fullheight parallax" id="home">
       <div class="hero-head">
-        <nav class="navbar">
+        <nav class="navbar is-active is-boxed">
           <div class="container">
             <div class="navbar-brand">
-              
-              <span class="navbar-burger burger" data-target="navbarMenuHeroB">
+              <label class="navbar-burger nav-toggle burger" data-target="navbarMenuHeroB" for="nav-toggle-state">
                 <span></span>
                 <span></span>
                 <span></span>
-              </span>
+              </label>
             </div>
+            <input type="checkbox" id="nav-toggle-state" />
             <div id="navbarMenuHeroB" class="navbar-menu">
               <div class="navbar-end">
                 <a class="navbar-item" href="#home">
@@ -92,7 +92,7 @@
                 </p>
                 
                 <p>
-                  This website exists as a way to show the web development that I have been working on. 
+                  This website exists as a way to show the web development projects that I have been working on. 
                   Since learning is a lifelong journey, this site will always be a work in progress.
                 </p>
 
@@ -109,18 +109,18 @@
 
     <section class="hero parallax" id="portfolio">
       <div class="portfolio-content">
-        <h1 class="title portfolio-title">
+        <h1 class="title portfolio-title is-2">
           Recent Works
         </h1>
 
         <div class="columns is-mobile">
-          <div class="stack column is-half">
+          <div class="stack column is-half-mobile is-half-tablet">
             <div class="is-size-7-mobile" id="container-stack">
             </div>
           </div>
 
-          <div class="stack-nav column is-one-quarter is-4-mobile">
-            <aside class="menu box is-size-6-mobile">
+          <div class="stack-nav column is-two-fifths-mobile is-one-quarter-tablet">
+            <aside class="menu box is-size-7-mobile">
               <p class="menu-label">
                 Web Development
               </p>
