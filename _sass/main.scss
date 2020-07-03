@@ -65,19 +65,25 @@ nav a.navbar-item {
   }
 
  #about-me {
-        position: relative;
+     position: relative;
      background-color: #e9cc9d;
      box-shadow: 0px 2px 10px rgb(82, 80, 80);
  }
 
- .about-me-photo {
-     margin-right: 2em;
+
+ div.about-me-photo figure.image {
+    width: 285px;
+    height: 380px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
  }
 
  img.photo-profile {
     border-radius: 25px;
-    height: 100%;
-    width: 100%;
+    max-width:100%;
+    max-height:100%;
+    padding-left: auto;
  }
 
 
