@@ -69,4 +69,4 @@ a lousy animation on your content.
 ### Evaluation
 - Side menu doesn't go well in mobile. 
 - Background take too much time too load. 
-- Center positioning are easier to be adapted to mobile screens
+- Center positioning are easier to be adapted to mobile 
