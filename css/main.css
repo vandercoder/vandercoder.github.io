@@ -4820,7 +4820,7 @@ a.navbar-item,
   .navbar-link:hover,
   .navbar-link.is-active {
     background-color: #fafafa;
-    color: #3273dc; }
+    color: #fca311; }
 
 .navbar-item {
   flex-grow: 0;
@@ -5338,7 +5338,7 @@ label.panel-block {
     border-bottom-color: #dbdbdb;
     border-bottom-style: solid;
     border-bottom-width: 1px;
-    color: #4a4a4a;
+    color: white;
     display: flex;
     justify-content: center;
     margin-bottom: -1px;
@@ -5346,12 +5346,12 @@ label.panel-block {
     vertical-align: top; }
     .tabs a:hover {
       border-bottom-color: #363636;
-      color: #363636; }
+      color: #adaaaa; }
   .tabs li {
     display: block; }
     .tabs li.is-active a {
       border-bottom-color: #3273dc;
-      color: #3273dc; }
+      color: #fca311; }
   .tabs ul {
     align-items: center;
     border-bottom-color: #dbdbdb;
@@ -7134,8 +7134,7 @@ label.panel-block {
   padding: 3rem 1.5rem 6rem; }
 
 html {
-  scroll-behavior: smooth;
-  background-color: #15274e; }
+  scroll-behavior: smooth; }
 
 body {
   color: #e5e5e5; }
@@ -7164,12 +7163,13 @@ nav a.navbar-item {
   font-weight: 600;
   text-shadow: 2px 2px 4px #000000; }
 
-#home div.hero-body {
-  padding-left: 4.5em; }
-
 #home {
   position: relative;
   background-color: #15274e; }
+
+.home-thumbnail {
+  width: 400px;
+  height: 400px; }
 
 @keyframes bouncing {
   0% {
@@ -7184,7 +7184,7 @@ nav a.navbar-item {
   bottom: 0;
   display: block;
   height: 30px;
-  left: 50%;
+  right: 10px;
   margin-left: -25px;
   position: absolute;
   width: 30px; }
@@ -7219,17 +7219,8 @@ img.photo-profile {
   margin-top: 1em;
   margin-bottom: 0.75em; }
 
-hr {
-  border: 1.5px solid  #1B263B;
-  border-radius: 5px;
-  opacity: 0.6; }
-
-div.portfolio-content {
-  margin-left: 5em; }
-
-aside.menu {
-  margin-top: 4.5em;
-  background-color: #e5e5e5; }
+.row-content {
+  margin-bottom: 3.5em; }
 
 div.stack {
   margin-bottom: 6em;
@@ -7239,12 +7230,6 @@ div.row-image figure img {
   width: 100%;
   box-shadow: 0px 2px 3px #525050; }
 
-div.row-content {
-  padding: 0.8em; }
-
-div.box {
-  background-color: lightgray; }
-
 .footer {
   background-color: #14213d; }
 
@@ -7252,20 +7237,26 @@ div.box {
   color: #e5e5e5; }
 
 @media screen and (max-width: 1023px) {
-  #home div.hero-body {
-    padding-left: 3em; }
+  .home-thumbnail {
+    width: 300px;
+    height: 300px; }
+  div.about-me-photo figure.image {
+    width: 180px;
+    height: 240px; }
+  div.about-me-photo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
   div.row-content.row-image {
     padding-top: 0;
-    padding-left: 0.5em;
+    padding-left: 0;
     padding-right: 0;
     padding-bottom: 0.5em; }
   div.row-content.row-desc {
     padding-top: 0;
-    padding-left: 0.5em;
+    padding-left: 0;
     padding-right: 0.5em;
-    padding-bottom: 0; }
-  div.portfolio-content {
-    margin-left: 3em; } }
+    padding-bottom: 0.5em; } }
 
 @media screen and (max-width: 768px) {
   div.row-content.row-image {
