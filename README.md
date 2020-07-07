@@ -1,106 +1,72 @@
-# Start package for [Bulma](http://bulma.io)
+# Portfolio Website - Version 1
 
-Tiny npm package that includes the `npm` **dependencies** you need to **build your own website** with Bulma.
+Usually to apply in most web development jobs you need to show a portfolio. It's 
+not always required per se, but it's not a bad thing to have one. I was going to
+build this website a little later since wanted to finish the entire Odin Project 
+curriculum first. Plus I haven't really focused on front-end side of things, so 
+I was a bit rusty on designing good-looking websites. But I wanted to apply to 
+some jobs so I just jumped in and give it a go. 
 
-<a href="http://bulma.io"><img src="https://raw.githubusercontent.com/jgthms/bulma-start/master/bulma-start.png" alt="Bulma: a Flexbox CSS framework" style="max-width:100%;" width="600" height="315"></a>
+I wrote this to recount my experience on building my first portfolio website and 
+what I learned along the way.
 
-## Install
+### Spec
+This websites implements basic HTML, CSS, and Javscript along with:
+- Bulma
+- Jquery
 
-```sh
-npm install bulma-start
-```
-_or_
+### Before starting
+First thing I considered was which frameworks and libraries am I going to use?
+Almost nobody I know builds their websites vanilla (HTML CSS JS ONLY), there's 
+always some helper framework that could make your website prettier. 
 
-```sh
-yarn add bulma-start
-```
+For CSS frameworks, Bootstrap comes to mind. But I came across Bulma when I was 
+learning RoR and find it very intuitive so I decided to use Bulma instead. 
+This decision is partly because I thought Bulma simpler being a CSS only framework,
+unlike Bootstrap which includes Javascript in its package. 
 
-## What's included
+Afterwards comes the design. I wanted a modern looking sleek portfolio, so I checked
+out good looking portfolio websites that didn't use too much javascript. Then 
+I wrote a rough design on a piece of paper as a guide.
 
-The `npm` dependencies included in `package.json` are:
+### Post Project Thoughts
+- **Have a design ready in mind**. When I started building this website, I approached 
+it the way I approached coding problems in general, by getting right into it. Because usually 
+you can find the solution as you are working on the problem. But in terms of web
+design, I find myself at loss doing this. How is it going to look like? Where am 
+I going to put this and that? Because in terms of web design, it's more of a design problem 
+not a logic one. So the key thing to remember is that you should have a rough idea 
+on how the website should look like. If you have no idea, try looking at other 
+websites on google and see how they look. Then grab a piece of paper 
+and draw how each page would roughly look like. 
 
-* <code>[bulma](https://github.com/jgthms/bulma)</code>
-* <code>[node-sass](https://github.com/sass/node-sass)</code> to compile your own Sass file
-* <code>[postcss-cli](https://github.com/postcss/postcss-cli)</code> and <code>[autoprefixer](https://github.com/postcss/autoprefixer)</code> to add support for older browsers
-* <code>[babel-cli](https://babeljs.io/docs/usage/cli/)</code>, <code>[babel-preset-env](https://github.com/babel/babel-preset-env)</code> and <code>[babel-preset-es2015-ie](https://github.com/jmcriffey/babel-preset-es2015-ie)</code> for compiling ES6 JavaScript files
+- **Prepare your content first**. Before you even start designing things, I find 
+that you should have the content ready first. Sure you can design some layouts, 
+but in the end you're going to have to test how that content looks like when it's actually
+shown in the web. Does it fit with the other contents? Is the color OK? What about 
+the size? These questions can only be answered after you actually put. So write 
+down your bios and description first. Get the images you think could be a good 
+fit for your website etc.. 
 
-Apart from `package.json`, the following files are included:
+- **Design mobile first**. This turns out to be one of the tips given when starting
+out on web design. Things tend to break in mobile size rather than the opposite.
 
-* `.babelrc` configuration file for [Babel](https://babeljs.io/)
-* `.gitignore` common [Git](https://git-scm.com/) ignored files
-* `index.html` this HTML5 file
-* `_sass/main.scss` a basic SCSS file that **imports Bulma** and explains how to **customize** your styles, and compiles to `css/main.css`
-* `_javascript/main.js` an ES6 JavaScript that compiles to `lib/main.js`
+- **Set a timeline**. As in all things, plan the project! This project ended up 
+taking me around 7 days to finish. I find myself at loss of what to do next, or 
+what content should I put. 
 
+- **Not all features are equal** Some features make your website look much more modern. 
+For instance, I find that there is a huge difference between using 
+parallax and not using parallax on my backgrounds. This requires only a simple CSS 
+manipulation but has more impact on how the website looks than the others. Other things 
+I can think of are text shadows. They come in handy when you have text with low 
+contrast. What I'm really trying to say is, invest your time on features that make 
+an impact. Sometimes you could be working on something for a long time only to have
+a lousy animation on your content. 
 
-## Get your feet wet
+- **If you use images, optimize them first**. Compress them, use proper size. 
 
-This package is meant to provide a **good starting point** for working with Bulma.
-
-When installing this package with the commands above, it landed in `$HOME/node_packages/bulma-start`.
-In order to use it as a **template** for your **project**, you might consider copying it to a better suited location:
-
-```sh
-cd $HOME/projects
-cp -a $HOME/node_modules/bulma-start my-bulma-project
-```
-
-Alternatively, you could do something similar with a GitHub clone as well.
-
-```sh
-cd $HOME/projects
-git clone https://github.com/jgthms/bulma-start
-mv bulma-start my-bulma-project
-rm -rf my-bulma-project/.git     # cut its roots
-```
-
-Now, that you prepared the groundwork for your project, set up Bulma and run the watchers:
-
-```sh
-cd my-bulma-project
-npm install
-npm start
-```
-
-As long as `npm start` is running, it will **watch** your changes. You can edit `_sass/main.scss` and `_javascript/main.js` at will. Changes are **immediately** compiled to their destinations, where `index.html` will pick them up upon reload in your browser.
-
-Some controlling output is written to the `npm start` console in that process:
-
-```sh
-_javascript/main.js -> lib/main.js
-
-=> changed: $HOME/projects/start-with-bulma/_sass/main.scss
-Rendering Complete, saving .css file...
-Wrote CSS to $HOME/projects/start-with-bulma/css/main.css
-```
-
-Use `npm run` to show all available commands:
-
-```sh
-Lifecycle scripts included in bulma-start:
-  start
-    npm-run-all --parallel css-watch js-watch
-
-available via `npm run-script`:
-  css-build
-    node-sass _sass/main.scss css/main.css
-  css-deploy
-    npm run css-build && npm run css-postcss
-  css-postcss
-    postcss --use autoprefixer --output css/main.css css/main.css
-  css-watch
-    npm run css-build -- --watch
-  deploy
-    npm run css-deploy && npm run js-build
-  js-build
-    babel _javascript --out-dir lib
-  js-watch
-    npm run js-build -- --watch
-```
-
-If you want to learn more, follow these links: [Bulma homepage](http://bulma.io) and [Documentation](http://bulma.io/documentation/overview/start/).
-
-
-## Copyright and license
-
-Code copyright 2017 Jeremy Thomas. Code released under [the MIT license](https://github.com/jgthms/bulma-start/blob/master/LICENSE).
+### Evaluation
+- Side menu doesn't go well in mobile. 
+- Background take too much time too load. 
+- Center positioning are easier to be adapted to mobile screens
