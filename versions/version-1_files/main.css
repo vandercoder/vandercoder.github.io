@@ -7134,19 +7134,13 @@ label.panel-block {
   padding: 3rem 1.5rem 6rem; }
 
 html {
-  scroll-behavior: smooth;
-  background-color: #15274e; }
+  scroll-behavior: smooth; }
 
 body {
-  color: #e5e5e5; }
-
-.title {
-  color: #e5e5e5; }
-
-.subtitle {
-  color: #e5e5e5; }
+  color: #1B263B; }
 
 a.navbar-item:hover {
+  color: black;
   background-color: transparent;
   text-shadow: 0px 0px 0px #000000; }
 
@@ -7168,8 +7162,7 @@ nav a.navbar-item {
   padding-left: 4.5em; }
 
 #home {
-  position: relative;
-  background-color: #15274e; }
+  position: relative; }
 
 @keyframes bouncing {
   0% {
@@ -7189,14 +7182,26 @@ nav a.navbar-item {
   position: absolute;
   width: 30px; }
 
+.parallax {
+  /* The image used */
+  background-image: url("../images/web-background/laptop-phone-left.jpg");
+  /* Set a specific height */
+  height: 100%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
 .center {
   display: block;
   margin-left: auto;
   margin-right: auto; }
 
-#about {
+#about-me {
   position: relative;
-  background-color: #14213d; }
+  background-color: #e9cc9d;
+  box-shadow: 0px 2px 10px #525050; }
 
 div.about-me-photo figure.image {
   width: 285px;
@@ -7212,8 +7217,7 @@ img.photo-profile {
   padding-left: auto; }
 
 #portfolio {
-  padding-top: 4em;
-  background-color: #15274e; }
+  padding-top: 4em; }
 
 #portfolio h1 {
   margin-top: 1em;
@@ -7228,8 +7232,7 @@ div.portfolio-content {
   margin-left: 5em; }
 
 aside.menu {
-  margin-top: 4.5em;
-  background-color: #e5e5e5; }
+  margin-top: 4.5em; }
 
 div.stack {
   margin-bottom: 6em;
@@ -7244,12 +7247,6 @@ div.row-content {
 
 div.box {
   background-color: lightgray; }
-
-.footer {
-  background-color: #14213d; }
-
-.footer p {
-  color: #e5e5e5; }
 
 @media screen and (max-width: 1023px) {
   #home div.hero-body {
