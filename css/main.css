@@ -7134,7 +7134,8 @@ label.panel-block {
   padding: 3rem 1.5rem 6rem; }
 
 html {
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+  background-color: #15274e; }
 
 body {
   color: #e5e5e5; }
