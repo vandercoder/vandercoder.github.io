@@ -4763,7 +4763,7 @@ body.has-navbar-fixed-bottom {
   overflow-y: hidden; }
 
 .navbar-burger {
-  color: #4a4a4a;
+  color: #fca311;
   cursor: pointer;
   display: block;
   height: 3.25rem;
@@ -7197,7 +7197,8 @@ nav a.navbar-item {
 
 #about {
   position: relative;
-  background-color: #14213d; }
+  background-color: #14213d;
+  padding: 3em; }
 
 div.about-me-photo figure.image {
   width: 285px;
@@ -7220,6 +7221,12 @@ img.photo-profile {
   margin-top: 1em;
   margin-bottom: 0.75em; }
 
+.portfolio-content {
+  padding: 2em; }
+
+div.tabs {
+  margin-bottom: 2em; }
+
 .row-content {
   margin-bottom: 3.5em; }
 
@@ -7238,16 +7245,24 @@ div.row-image figure img {
   color: #e5e5e5; }
 
 @media screen and (max-width: 1023px) {
+  #home {
+    padding-bottom: 2em; }
   .home-thumbnail {
-    width: 300px;
-    height: 300px; }
+    width: 16em;
+    height: 16em; }
+  .arrow {
+    margin-bottom: 1em;
+    width: 20px;
+    height: 20px; }
   div.about-me-photo figure.image {
-    width: 180px;
-    height: 240px; }
+    width: 150px;
+    height: 200px; }
   div.about-me-photo {
     display: block;
     margin-left: auto;
     margin-right: auto; }
+  div.tabs li {
+    font-size: 0.8em; }
   div.row-content.row-image {
     padding-top: 0;
     padding-left: 0;
