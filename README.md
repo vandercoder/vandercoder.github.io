@@ -17,4 +17,5 @@
 - Add more content to About Me with carousell slideshow
 - Add more content to portfolio
 - Refactor Portfolio dynamic content to only load required data instead of the whole html
+- Need to clean the css code
 
