@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/af801e5531.js" crossorigin="anonymous"></script>
+  <title>Tailwind CSS Demo</title>
+</head>
+<body class="bg-gray-800">
+
+  <nav class="flex items-center justify-between flex-wrap bg-gray-800 p-6">
+    <div class="flex items-center flex-shrink-0 text-white mr-6">
+      <span class="font-arial font-black text-2xl tracking-tight"> AW </span>
+    </div>
+    <div class="block lg:hidden">
+      <button class="navburger flex items-center px-3 py-2 border rounded text-white border-white hover:text-gray-500 hover:border-white">
+        <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+      </button>
+    </div>
+    <div class="navmenu w-full block flex-grow hidden lg:flex lg:visible lg:items-center lg:w-auto">
+      <div class="text-sm lg:flex-grow">
+        <a href="./index.html" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-500 mr-4">
+          Home
+        </a>
+        <a href="./about.html" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-500 mr-4">
+          About
+        </a>
+        <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-500">
+          Gallery
+        </a>
+      </div>
+      <div>
+        <a href="https://github.com/vandercoder" class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-gray-500 hover:bg-white mt-4 lg:mt-0">
+          <i class="fa fa-github"></i>
+          Github
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="py-10 bg-gradient-gray">
+    <div class="sm:flex text-left mx-12 text-base">
+      <div class="container font-mono">
+        <p class="text-2xl font-semibold text-gray-600 my-4">About Me</p>
+        <p>
+          Hello, my name is Andika William. Most people call me 'Dika'
+          here in Indonesia, but I introduce myself as 'Andy' when I'm
+          speaking English since it's easier to pronounce.
+          I studied computer science at Univeristas Gadjah Mada.  
+        </p>
+
+        <br>
+        
+        <p class="text-2xl font-semibold text-gray-600 my-4">About This Site</p>
+        <p>
+          This website exists as a way to show the web development projects that I have been working on. 
+          Also.. it's nice to have a portfolio to show to people these days.
+          Since learning is a lifelong journey, this site will always be a work in progress.
+        </p>
+        <br>
+      </div>
+      <img class="w-full" src="../resources/Programming-rafiki.svg" alt="programming illustration">
+    </div>
+
+    <p class="text-center text-lg font-mono">
+      Thank you for visiting!
+    </p>
+    
+      
+  </section>
+
+  <section id="contact-me">
+    <div class="text-center font-mono text-sm text-white bg-gray-800 py-6">
+      <a class="bg-white hover:bg-gray-100 text-gray-800 font-bold py-2 px-4 border border-gray-500 rounded" href="mailto: andikawilliam@outlook.com">
+        Let's talk
+      </a>
+      
+      <p class="py-4"> Find me on
+        <a class="fa fa-github" href="https://github.com/vandercoder"></a>
+        <a class="fa fa-linkedin" href="https://www.linkedin.com/in/andika-william-62777314a/"></a>
+        <a class="fa fa-email"></a>
+      </p>
+
+      <a href="https://stories.freepik.com/web">Illustration by Stories by Freepik</a>
+      <p class="pt-4">© 2020 | By Andika William</p>
+    </div>
+  </section>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+  <script src="index.js"></script>
+</body>
+</html>
