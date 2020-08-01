@@ -9,9 +9,8 @@ $(".navburger").click(function() {
 // create template for summary
 
 // to do:
-// populate homepage
-// add footer Find me
-// add about
+
+
 // add gallery
 // smooth drop down navbar mobile
 
@@ -20,3 +19,6 @@ $(".navburger").click(function() {
 // done:
 // separate data (advanced using yaml)
 // add changing smooth animation (fade in out)
+// populate homepage
+// add footer Find me
+// add about
