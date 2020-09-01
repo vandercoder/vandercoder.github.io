@@ -3,7 +3,8 @@ let projectCards = document.querySelector("#project-cards");
 
 let template = document.querySelector("#card-template");
 
-insertProjects(techStacks[0]);
+techStacks.forEach(insertProjects);
+// insertProjects(techStacks[0]);
 
 $(".tech-stack").click(function() {
   if (!this.classList.contains("active")) {
@@ -44,16 +45,22 @@ function changeStack(stack) {
 
 function insertProjects(stackProjects) {
   let div = document.createElement("div");
-  $(div).addClass("container mx-auto md:flex md:justify-center")
-  $(div).hide()
+  // $(div).addClass("container mx-auto md:flex md:justify-center")
+  // $(div).hide()
 
   stackProjects.forEach(function(projectContent) {
     let card = template.content.cloneNode(true);
     let cardMain = card.querySelector(".card-main");
   
-    let img = card.querySelector("img");
-    img.setAttribute("src", projectContent[0]);
-    img.setAttribute("alt", projectContent[1]);
+    // let img = card.querySelector("img");
+    // img.setAttribute("src", projectContent[0]);
+    // img.setAttribute("alt", projectContent[1]);
+
+    cardMain.style.backgroundImage = "url(/resources/videos/screenshot/" + projectContent[0] + ".png)"
+
+    let videoSrc = card.querySelector("video source");
+    let videoPath = "/resources/videos/" + projectContent[0] + ".mp4"
+    videoSrc.setAttribute("src", videoPath);
     
     let cardTitle = card.querySelector(".card-title");
     cardTitle.textContent = projectContent[2];
@@ -61,18 +68,31 @@ function insertProjects(stackProjects) {
     let cardContent = card.querySelector(".card-content");
     cardContent.textContent = projectContent[3];
     
-    let githubLink = card.querySelector(".github-link");
-    githubLink.setAttribute("href", projectContent[4])
-    
-    let liveLink = card.querySelector(".live-link");
-    liveLink.setAttribute("href", projectContent[5])
+    // let liveLink = card.querySelector(".live-link");
+    // liveLink.setAttribute("href", projectContent[5])
+
+    let video = card.querySelector("video");
+    let overlay = card.querySelector(".overlay");
+
+    cardMain.addEventListener("mouseover", function(){
+      overlay.classList.remove("opacity-60");
+      overlay.classList.add("opacity-40");
+      video.play();
+    });
+    cardMain.addEventListener("mouseout", function(){
+      overlay.classList.remove("opacity-40");
+      overlay.classList.add("opacity-60");
+
+      video.pause();
+    });
 
     $(div).append(card);
   });
   $(projectCards).append(div);
   $(div).fadeIn(600);
-
 }
+
+
 
 function fade(element) {
     var op = 1;  // initial opacity
