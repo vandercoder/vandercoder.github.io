@@ -2,6 +2,16 @@ module.exports = {
   purge: [],
   theme: {
     extend: {
+      fontFamily: {
+        'roboto' : ['Roboto', 'sans-serif'],
+        'lato' : ['Lato', 'sans-serif'],
+      },
+      fontSize: {
+        '1vw' : '1vw',
+        '1.2vw' : '1.2vw',
+        '1.5vw' : '1.5vw',
+        '2vw' : '2vw',
+      },
       height: {
         '1/3': '33vh',
         '2/5': '40vh',

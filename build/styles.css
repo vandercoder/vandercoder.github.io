@@ -6108,6 +6108,14 @@ video {
   font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
+.font-roboto {
+  font-family: Roboto, sans-serif;
+}
+
+.font-lato {
+  font-family: Lato, sans-serif;
+}
+
 .font-hairline {
   font-weight: 100;
 }
@@ -6362,6 +6370,22 @@ video {
 
 .text-6xl {
   font-size: 4rem;
+}
+
+.text-1vw {
+  font-size: 1vw;
+}
+
+.text-1\.2vw {
+  font-size: 1.2vw;
+}
+
+.text-1\.5vw {
+  font-size: 1.5vw;
+}
+
+.text-2vw {
+  font-size: 2vw;
 }
 
 .leading-3 {
@@ -20012,6 +20036,14 @@ video {
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
+  .sm\:font-roboto {
+    font-family: Roboto, sans-serif;
+  }
+
+  .sm\:font-lato {
+    font-family: Lato, sans-serif;
+  }
+
   .sm\:font-hairline {
     font-weight: 100;
   }
@@ -20266,6 +20298,22 @@ video {
 
   .sm\:text-6xl {
     font-size: 4rem;
+  }
+
+  .sm\:text-1vw {
+    font-size: 1vw;
+  }
+
+  .sm\:text-1\.2vw {
+    font-size: 1.2vw;
+  }
+
+  .sm\:text-1\.5vw {
+    font-size: 1.5vw;
+  }
+
+  .sm\:text-2vw {
+    font-size: 2vw;
   }
 
   .sm\:leading-3 {
@@ -33917,6 +33965,14 @@ video {
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
+  .md\:font-roboto {
+    font-family: Roboto, sans-serif;
+  }
+
+  .md\:font-lato {
+    font-family: Lato, sans-serif;
+  }
+
   .md\:font-hairline {
     font-weight: 100;
   }
@@ -34171,6 +34227,22 @@ video {
 
   .md\:text-6xl {
     font-size: 4rem;
+  }
+
+  .md\:text-1vw {
+    font-size: 1vw;
+  }
+
+  .md\:text-1\.2vw {
+    font-size: 1.2vw;
+  }
+
+  .md\:text-1\.5vw {
+    font-size: 1.5vw;
+  }
+
+  .md\:text-2vw {
+    font-size: 2vw;
   }
 
   .md\:leading-3 {
@@ -47822,6 +47894,14 @@ video {
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
+  .lg\:font-roboto {
+    font-family: Roboto, sans-serif;
+  }
+
+  .lg\:font-lato {
+    font-family: Lato, sans-serif;
+  }
+
   .lg\:font-hairline {
     font-weight: 100;
   }
@@ -48076,6 +48156,22 @@ video {
 
   .lg\:text-6xl {
     font-size: 4rem;
+  }
+
+  .lg\:text-1vw {
+    font-size: 1vw;
+  }
+
+  .lg\:text-1\.2vw {
+    font-size: 1.2vw;
+  }
+
+  .lg\:text-1\.5vw {
+    font-size: 1.5vw;
+  }
+
+  .lg\:text-2vw {
+    font-size: 2vw;
   }
 
   .lg\:leading-3 {
@@ -61727,6 +61823,14 @@ video {
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
+  .xl\:font-roboto {
+    font-family: Roboto, sans-serif;
+  }
+
+  .xl\:font-lato {
+    font-family: Lato, sans-serif;
+  }
+
   .xl\:font-hairline {
     font-weight: 100;
   }
@@ -61981,6 +62085,22 @@ video {
 
   .xl\:text-6xl {
     font-size: 4rem;
+  }
+
+  .xl\:text-1vw {
+    font-size: 1vw;
+  }
+
+  .xl\:text-1\.2vw {
+    font-size: 1.2vw;
+  }
+
+  .xl\:text-1\.5vw {
+    font-size: 1.5vw;
+  }
+
+  .xl\:text-2vw {
+    font-size: 2vw;
   }
 
   .xl\:leading-3 {

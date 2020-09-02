@@ -1,10 +1,9 @@
-let techStacks = [rubyOnRails, django, javascript];
+let techStacks = [django, rubyOnRails, javascript];
 let projectCards = document.querySelector("#project-cards");
 
 let template = document.querySelector("#card-template");
 
 techStacks.forEach(insertProjects);
-// insertProjects(techStacks[0]);
 
 $(".tech-stack").click(function() {
   if (!this.classList.contains("active")) {
@@ -67,42 +66,38 @@ function insertProjects(stackProjects) {
     
     let cardContent = card.querySelector(".card-content");
     cardContent.textContent = projectContent[3];
-    
-    // let liveLink = card.querySelector(".live-link");
-    // liveLink.setAttribute("href", projectContent[5])
 
-    let video = card.querySelector("video");
+    let cardStack = card.querySelector(".card-stack");
+    cardStack.textContent = "Stack: " + projectContent[4]
+    
+    let liveLink = card.querySelector(".live-link");
+    liveLink.setAttribute("href", projectContent[5])
+
+    let cardText = card.querySelector(".card-text");
     let overlay = card.querySelector(".overlay");
+    let video = card.querySelector("video");
 
     cardMain.addEventListener("mouseover", function(){
+      cardText.style.transform = "scale(1.3)";
       overlay.classList.remove("opacity-60");
       overlay.classList.add("opacity-40");
       video.play();
     });
     cardMain.addEventListener("mouseout", function(){
+      cardText.style.transform = "scale(1.0)";
       overlay.classList.remove("opacity-40");
       overlay.classList.add("opacity-60");
-
       video.pause();
+    });
+
+    let loadMessage = card.querySelector(".load-message");
+
+    cardMain.addEventListener("click", function(){
+      loadMessage.textContent = projectContent[6];
     });
 
     $(div).append(card);
   });
   $(projectCards).append(div);
   $(div).fadeIn(600);
-}
-
-
-
-function fade(element) {
-    var op = 1;  // initial opacity
-    var timer = setInterval(function () {
-        if (op <= 0.1){
-            clearInterval(timer);
-            element.style.display = 'none';
-        }
-        element.style.opacity = op;
-        element.style.filter = 'alpha(opacity=' + op * 100 + ")";
-        op -= op * 0.1;
-    }, 50);
 }
