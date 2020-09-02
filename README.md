@@ -1,12 +1,7 @@
 
 
-# Portfolio Website - Version 3
+# Portfolio Website - Version 4
 
 ### Notes
-- **Switched from Bulma to TailwindCSS**
-- **Reduce content for a simpler look**
-
-### TO DO
-- add gallery
-- smooth drop down navbar mobile
-
+Switched into a more simple look
+Design based on [Pieter Levels' Website](levels.io)
