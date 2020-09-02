@@ -28,15 +28,15 @@
     </div>
     <div class="navmenu w-full block flex-grow hidden lg:flex lg:visible lg:items-center lg:w-auto">
       <div class="text-sm lg:flex-grow">
-        <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-500 mr-4">
+        <a href="./index.html" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-500 mr-4">
           Home
         </a>
-        <a href="./about.html" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-500 mr-4">
+        <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-500 mr-4">
           About
         </a>
       </div>
       <div>
-        <a href="https://github.com/vandercoder" class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-gray-400 hover:bg-white mt-4 lg:mt-0">
+        <a href="https://github.com/vandercoder" class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-gray-500 hover:bg-white mt-4 lg:mt-0">
           <i class="fa fa-github"></i>
           Github
         </a>
@@ -45,42 +45,33 @@
   </nav>
 
   <section class="py-10 bg-gradient-gray">
-    <div class="text-center font-mono text-sm">
-      <img class="h-32 w-32 md:h-40 md:w-40 rounded-full my-6 mx-auto" src="./resources/andika-profile-grayscale.jpeg">
-      <p>Hi there! My name is Andika.</p>
-      <p>I'm a web developer based in Jakarta.</p>
-    </div>
+    <div class="text-left mx-12 text-base lg:flex lg:text-lg">
+      <div class="container font-mono">
+        <p class="text-2xl font-semibold text-gray-600 my-4">About Me</p>
+        <p>
+          Hello, my name is Andika William. Most people call me 'Dika'
+          here in Indonesia, but I introduce myself as 'Andy' when I'm
+          speaking English since it's easier to pronounce.
+          I studied computer science at Universitas Gadjah Mada.  
+        </p>
 
-    <div class="min-h-halfscreen">
-      <div class="flex justify-center text-sm sm:text-base my-6 mx-auto px-4">
-        <button class="ror active tech-stack inline-block border active bg-gray-800 text-white rounded-full py-1 px-3 mx-2 sm:mx-6">Ruby on Rails</button>
-        <button class="django tech-stack inline-block border border-black rounded-full text-gray-800 hover:bg-gray-400 hover:text-gray-800 py-1 px-3 mx-2 sm:mx-6">Django</button>
-        <button class="javascript tech-stack inline-block border border-black rounded-full text-gray-800 hover:bg-gray-400 hover:text-gray-800 py-1 px-3 mx-2 sm:mx-6">Javascript</button>
-      </div>
-
-      <div id="project-cards">
-
-      </div>
-      <template id="card-template">
-        <div class="card-main flex py-2 px-10 mb-6">
-          <div class="max-w-sm mx-auto rounded overflow-hidden shadow-lg bg-gray-100">
-            <img class="w-full shadow-sm" alt="Sunset in the mountains">
-            
-            <div class="px-6 py-4">
-              <div class="card-title font-bold text-xl mb-2"></div>
-              <p class="card-content text-gray-700 text-base">
-                
-              </p>
-            </div>
-            <div class="px-6 py-4">
-              <a class="github-link inline-block bg-gray-400 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">Github</a>
-              <a class="live-link inline-block bg-gray-400 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">Live</a>
-            </div>
-          </div>
-        </div>
-      </template>   
-    </div>   
+        <br>
         
+        <p class="text-2xl font-semibold text-gray-600 my-4">About This Site</p>
+        <p>
+          This website exists as a way to show the web development projects that I have been working on. 
+          Other projects are available on my Github.
+          Since learning is a lifelong journey, this site will always be a work in progress.
+        </p>
+        <br>
+        <p class="text-center lg:text-left">
+          Thank you for visiting!
+        </p>
+      </div>
+      <div class="m-auto w-full -mt-6 lg:w-4/5 ">
+        <img src="./resources/Programming-rafiki.svg" alt="programming illustration">
+      </div>
+    </div>    
   </section>
 
   <section id="contact-me">
@@ -94,12 +85,12 @@
         <a class="fa fa-linkedin" href="https://www.linkedin.com/in/andika-william-62777314a/"></a>
         <a class="fa fa-email"></a>
       </p>
+
+      <a href="https://stories.freepik.com/web">Illustration by Stories by Freepik</a>
       <p class="pt-4">© 2020 | By Andika William</p>
     </div>
   </section>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
-  <script src="content.js"></script>
-  <script src="cards.js"></script>
   <script src="index.js"></script>
 </body>
 </html>

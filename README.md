@@ -2,9 +2,11 @@
 
 # Portfolio Website - Version 3
 
-Third version of my portfolio website. Trying to make it even more simpler.
-
-### Improvements
+### Notes
+- **Switched from Bulma to TailwindCSS**
+- **Reduce content for a simpler look**
 
 ### TO DO
+- add gallery
+- smooth drop down navbar mobile
 
