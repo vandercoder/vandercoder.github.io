@@ -58,7 +58,7 @@ function insertProjects(stackProjects) {
     cardMain.style.backgroundImage = "url(/resources/videos/screenshot/" + projectContent[0] + ".png)"
 
     let videoSrc = card.querySelector("video source");
-    let videoPath = "/resources/videos/" + projectContent[0] + ".mp4"
+    let videoPath = "./resources/videos/" + projectContent[0] + ".mp4"
     videoSrc.setAttribute("src", videoPath);
     
     let cardTitle = card.querySelector(".card-title");

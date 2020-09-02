@@ -20,7 +20,7 @@
   <section class="py-10 bg-cover bg-left sm:h-screen" style="background-image: url(/resources/mac-bag.jpg); box-shadow:inset 0 0 0 2000px rgba(3, 3, 3, 0.5);">
     <div class="sm:flex sm:items-center sm:justify-center h-full">
       <div class="h-32 w-32 mx-auto sm:mx-0 sm:h-48 sm:w-48 ">
-        <img class="rounded-full" src="/resources/andika-profile-grayscale.jpeg">
+        <img class="rounded-full" src="./resources/andika-profile-grayscale.jpeg">
       </div>
       <div class="text-justify text-white font-sans font-thin p-6 text-lg  mx-auto sm:mx-0 w-10/12 sm:w-1/2">
         <h1 class="typewrite text-center font-roboto font-bold sm:text-justify" data-period="2000" data-type='[ "Hi!", "Hej!", "Halo!", "Bonjour!", "こんにちは!", "Hola!", "你好!", "Ciao!"]'>
@@ -45,34 +45,29 @@
   </section>
 
   <section>
-      <!-- <div class="flex justify-center text-sm sm:text-base my-6 mx-auto px-4">
-        <button class="ror active tech-stack inline-block border active bg-gray-800 text-white rounded-full py-1 px-3 mx-2 sm:mx-6">Ruby on Rails</button>
-        <button class="django tech-stack inline-block border border-black rounded-full text-gray-800 hover:bg-gray-400 hover:text-gray-800 py-1 px-3 mx-2 sm:mx-6">Django</button>
-        <button class="javascript tech-stack inline-block border border-black rounded-full text-gray-800 hover:bg-gray-400 hover:text-gray-800 py-1 px-3 mx-2 sm:mx-6">Javascript</button>
-      </div> -->
+    <div id="project-cards">
 
-      <div id="project-cards">
-
-      </div>
-      <template id="card-template">
-        <div class="relative card-main bg-cover bg-center h-2/5 sm:h-1/3 md:h-1/2 lg:h-3/5 xl:h-video-full">
-          <a class="live-link">
-            <video muted class="object-cover object-top absolute hidden sm:block z-0 w-full h-full">
-              <source src="/resources/videos/django-kelasku.mp4" type="video/mp4" />
-              Your browser does not support HTML5 video.
-            </video>
-            <div class="overlay absolute transition-opacity duration-300 w-full h-full z-20 bg-black opacity-60"></div>
-            <div class="relative flex items-center justify-center h-full w-3/4 sm:w-1/2 mx-auto z-30">            
-              <div class="card-text transition-transform duration-300 text-white text-center text-lg">
-                <h1 class="card-title font-roboto font-bold"></h1>
-                <p class="card-content font-lato hidden sm:block"></p>
-                <p class="card-stack font-lato text-sm"></p>
-              </div>
+    </div>
+    
+    <template id="card-template">
+      <div class="relative card-main bg-cover bg-center h-2/5 sm:h-1/3 md:h-1/2 lg:h-3/5 xl:h-video-full">
+        <a class="live-link">
+          <video muted class="object-cover object-top absolute hidden sm:block z-0 w-full h-full">
+            <source type="video/mp4" />
+            Your browser does not support HTML5 video.
+          </video>
+          <div class="overlay absolute transition-opacity duration-300 w-full h-full z-20 bg-black opacity-60"></div>
+          <div class="relative flex items-center justify-center h-full w-3/4 sm:w-1/2 mx-auto z-30">            
+            <div class="card-text transition-transform duration-300 text-white text-center text-lg">
+              <h1 class="card-title font-roboto font-bold"></h1>
+              <p class="card-content font-lato hidden sm:block"></p>
+              <p class="card-stack font-lato text-sm"></p>
             </div>
-            <p class="absolute top-0 right-0 load-message text-sm font-lato text-red-600 bg-white"></p>
-          </a>
-        </div>
-      </template>   
+          </div>
+          <p class="absolute top-0 right-0 load-message text-sm font-lato text-red-600 bg-white"></p>
+        </a>
+      </div>
+    </template>   
   </section>
 
   <section id="contact-me">
