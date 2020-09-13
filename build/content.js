@@ -2,7 +2,7 @@ let django = [
   [
     "django-kelasku",
     "Kelasku",
-    "Kelasku",
+    "Kelasku Course Review",
     "Course Review website. Students can login and give review to courses they have been to.",
     "Django, Boostrap",
     "https://fast-beach-26927.herokuapp.com",
@@ -14,7 +14,7 @@ let rubyOnRails = [
   [
     "ror-twitter",
     "Twitterr",
-    "Twitterr on Rails",
+    "Twitterr Mockup",
     "Made a website that imitates the core functionalities of Twitter.",
     "Ruby on Rails, Devise, Bulma",
     "https://shrouded-temple-93524.herokuapp.com",
@@ -23,7 +23,7 @@ let rubyOnRails = [
   [
     "ror-event-master",
     "Event Master",
-    "Event Master",
+    "Event Brite Mockup",
     "Website mock-up based on Event Brite. Users can login and post events online.",
     "Ruby on Rails, Devise, Bulma",
     "https://cryptic-stream-58688.herokuapp.com",

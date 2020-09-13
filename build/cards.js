@@ -67,8 +67,8 @@ function insertProjects(stackProjects) {
     let cardTitle = card.querySelector(".card-title");
     cardTitle.textContent = projectContent[2];
 
-    let cardContent = card.querySelector(".card-content");
-    cardContent.textContent = projectContent[3];
+    // let cardContent = card.querySelector(".card-content");
+    // cardContent.textContent = projectContent[3];
 
     let cardStack = card.querySelector(".card-stack");
     cardStack.textContent = "Stack: " + projectContent[4];
