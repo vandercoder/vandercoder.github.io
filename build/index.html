@@ -3,15 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="google-site-verification"
-      content="ILhz-hDEUOuIxWF0CiMU0i7d7tObfFcyaJnALXeOBro"
-    />
     <link rel="stylesheet" href="styles.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,600;1,700&display=swap" rel="stylesheet">
     <script
       src="https://kit.fontawesome.com/af801e5531.js"
       crossorigin="anonymous"
@@ -32,116 +25,32 @@
   </head>
   <body>
     <section
-      class="py-10 bg-cover bg-left sm:h-screen"
-      style="
-        background-image: url(./resources/mac-bag.jpg);
-        box-shadow: inset 0 0 0 2000px rgba(3, 3, 3, 0.5);
-      "
+      class="bg-gradient-to-r text-white leading-relaxed from-black-200 to-black-100 h-screen"
     >
-      <div class="sm:flex sm:items-center sm:justify-center h-full">
-        <div class="h-32 w-32 mx-auto sm:mx-0 sm:h-48 sm:w-48">
-          <img
-            class="rounded-full"
-            src="./resources/andika-profile-grayscale.jpeg"
-          />
-        </div>
-        <div
-          class="text-justify text-white font-sans font-thin p-6 text-lg mx-auto sm:mx-0 w-10/12 sm:w-1/2"
-        >
-          <h1
-            class="typewrite text-center font-roboto font-bold sm:text-justify"
-            data-period="2000"
-            data-type='[ "Hi!", "Hej!", "Halo!", "Bonjour!", "こんにちは!", "Hola!", "你好!", "Ciao!"]'
-          >
-            <span class="wrap"></span>
+      <div class="h-full pl-32 py-16 w-4/5 lg:w-1/2">
+        <div class="text-left">
+          <h1 class="font-montserrat text-5xl font-bold">
+            Hi there.
           </h1>
-          <h1 class="text-center font-roboto font-bold sm:text-justify">
-            My name is Andika.
-          </h1>
-          <p class="font-lato font-thin mt-6 sm:mt-0">
-            Most people call me 'Dika' here in Indonesia, but I introduce myself
-            as 'Andy' when I'm speaking English since it's easier to pronounce.
-            I studied computer science at Universitas Gadjah Mada. This website
-            exists as a way to show the web development projects that I have
-            been working on. Checkout my other projects on my
-            <a href="https://github.com/vandercoder" class="text-green-400"
-              >Github</a
-            >!
+          <h2 class="font-montserrat text-3xl font-semibold mt-6">
+            My name is Andika William.
+          </h2>
+          <p class="font-montserrat text-xl text-gray-300 font-thin tracking-wide text-justify mt-6 sm:mt-8">
+            I'm a Web Developer from Jakarta who programs mostly in Python / Javascript and experience in using Vue.js. 
+            Also I'm a former QA Engineer who worked with automation using Appium / Selenium. 
           </p>
-          <!-- <p class="mt-4">
-          This website exists as a way to show the web development projects that I have been working on. 
-            Other projects are available on my Github.
-            Since learning is a lifelong journey, this site will always be a work in progress.
-        </p> -->
+          <p class="font-montserrat text-xl text-gray-300 font-thin tracking-wide text-justify mt-6 sm:mt-8">
+            For more on the technologies that I've used, check out my <a href="" class="hvr-bounce-to-top">stacks</a>. You can also check out my other works on my 
+            <a href="" class="hvr-bounce-to-top">Github</a>. 
+          </p>
+          <p class="font-montserrat text-xl text-gray-300 font-thin tracking-wide text-justify mt-6 sm:mt-8">
+            Besides programming and helping around the house, I spend my pastime reading books (no really), running, and learning the guitar. 
+          </p>
         </div>
       </div>
     </section>
 
-    <section>
-      <div id="project-cards"></div>
-
-      <template id="card-template">
-        <div
-          class="relative card-main bg-cover bg-center h-2/5 sm:h-1/3 md:h-1/2 lg:h-3/5 xl:h-video-full"
-        >
-          <a class="live-link">
-            <video
-              muted
-              class="object-cover object-top absolute hidden sm:block z-0 w-full h-full"
-            >
-              <source type="video/mp4" />
-              Your browser does not support HTML5 video.
-            </video>
-            <div
-              class="overlay absolute transition-opacity duration-300 w-full h-full z-20 bg-black opacity-60"
-            ></div>
-            <div
-              class="relative flex items-center justify-center h-full w-3/4 sm:w-1/2 mx-auto z-30"
-            >
-              <div
-                class="card-text transition-transform duration-300 text-white text-center text-lg"
-              >
-                <h1 class="card-title font-roboto font-bold"></h1>
-                <p class="card-content font-lato hidden sm:block"></p>
-                <p class="card-stack font-lato text-sm"></p>
-              </div>
-            </div>
-            <p
-              class="absolute top-0 right-0 load-message text-sm font-lato text-red-600 bg-white"
-            ></p>
-          </a>
-        </div>
-      </template>
-    </section>
-
-    <section id="contact-me">
-      <div class="text-center font-lato text-sm text-gray-800 bg-gray-200 py-6">
-        <a
-          class="bg-white hover:bg-gray-100 text-gray-800 font-bold py-2 px-4 border border-gray-500 rounded"
-          href="mailto: andikawilliam@outlook.com"
-        >
-          <span class="far fa-envelope"></span>
-          Let's talk
-        </a>
-
-        <p class="py-4">
-          Find me on
-          <a
-            class="fa fa-github px-1"
-            href="https://github.com/vandercoder"
-          ></a>
-          <a
-            class="fa fa-linkedin"
-            href="https://www.linkedin.com/in/andika-william-62777314a/"
-          ></a>
-          <a class="fa fa-email"></a>
-        </p>
-        <p>© 2020 | By Andika William</p>
-      </div>
-    </section>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="content.js"></script>
-    <script src="cards.js"></script>
-    <script src="index.js"></script>
+    <!-- <script src="index.js"></script> -->
   </body>
 </html>
