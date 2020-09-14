@@ -1,5 +1,5 @@
 module.exports = {
-  purge: [],
+  purge: ['./build/*.html',],
   theme: {
     extend: {
       fontFamily: {
