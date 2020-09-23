@@ -1,23 +1,49 @@
 {
-  "name": "portfolio-tailwind",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "portfolio-vue",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "postcss css/styles.css -o build/styles.css"
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "autoprefixer": "^9.8.5",
-    "js-yaml": "^3.14.0",
-    "postcss-cli": "^7.1.1",
-    "postcss-modules": "^3.2.0",
-    "tailwindcss": "^1.5.1"
+    "@fortawesome/fontawesome-svg-core": "^1.2.30",
+    "@fortawesome/free-brands-svg-icons": "^5.14.0",
+    "@fortawesome/free-regular-svg-icons": "^5.14.0",
+    "@fortawesome/free-solid-svg-icons": "^5.14.0",
+    "@fortawesome/vue-fontawesome": "^2.0.0",
+    "core-js": "^3.6.5",
+    "vue": "^2.6.11",
+    "vue-plugin-load-script": "^1.3.2"
   },
   "devDependencies": {
-    "prettier": "2.1.1"
-  }
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "vue-cli-plugin-tailwind": "~1.5.0",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
 }

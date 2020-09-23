@@ -1,5 +1,13 @@
 module.exports = {
-  purge: ['./build/*.html',],
+  future: {
+    removeDeprecatedGapUtilities: true,
+    purgeLayersByDefault: true,
+  },
+  purge: [
+    './public/**/*.html',
+    './src/**/*.html',
+    './src/**/*.vue',
+  ],
   theme: {
     extend: {
       colors: {

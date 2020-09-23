@@ -1,7 +1,24 @@
+# portfolio-vue
 
+## Project setup
+```
+npm install
+```
 
-# Portfolio Website - Version 4
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
 
-### Notes
-Switched into a more simple look
-Design based on [Pieter Levels' Website](levels.io)
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
