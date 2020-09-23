@@ -1,7 +1,7 @@
 <template>
   <div class="bg-gradient-to-r from-black-200 to-black-100 py-4 min-h-screen">
     <section 
-      class="lg:flex px-10 py-16 font-montserrat text-white leading-relaxed"
+      class="lg:flex px-6 py-16 font-montserrat text-white leading-relaxed"
     >
     <TheSideBar v-on:change-page="changePage" :currentPage="currentPage"/>
     

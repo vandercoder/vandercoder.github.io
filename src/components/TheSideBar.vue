@@ -18,7 +18,7 @@
         class="block mt-4 px-8 font-semibold transition-opacity duration-300 hover:opacity-50 cursor-pointer"
         v-for="page in pages"
         :key="page.id"
-        v-on:click="$emit('change-page', page.name)"
+        v-on:click="changePage(page)"
         v-bind:class="{ 'text-red-pink' : isActivePage(page) }"
       >
       <font-awesome-icon :icon="[getIconFamily(page), getIconName(page)]" fixed-width>
@@ -71,6 +71,10 @@ export default {
     },
     toggleSideBar: function() {
       this.openSideBar = !this.openSideBar;
+    },
+    changePage: function(page) {
+      this.toggleSideBar();
+      this.$emit('change-page', page.name);
     },
     getIconFamily: function(page){
       return page.icon.split('-')[0];

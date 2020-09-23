@@ -16,11 +16,11 @@
         v-for="project in projects" :key="project.id" 
         :href="project.link" target="_blank" rel="noopener noreferrer">
         <img 
-          class="w-1/2 background-transparent shadow-lg rounded-lg opacity-75" 
+          class="w-1/2 h-full background-transparent shadow-lg rounded-lg opacity-75" 
           v-bind:src="project.image" :alt="project.name">
         <div class="flex items-center rounded-lg pl-4 sm:pl-6">
           <div>
-            <p class="text-base sm:text-lg font-semibold text-white"> {{ project.name }}
+            <p class="text-sm sm:text-base font-semibold text-white"> {{ project.name }}
             <p class="text-sm sm:text-base font-light text-gray-300">{{ project.desc }}</p>
           </div>
         </div>
