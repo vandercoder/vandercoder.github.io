@@ -38,8 +38,7 @@ module.exports = {
         '40': '0.4',
         '60': '0.6'
       },
-    },
-    
+    }, 
   },
   variants: {},
   plugins: [],
