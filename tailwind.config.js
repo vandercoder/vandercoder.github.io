@@ -5,7 +5,10 @@ module.exports = {
   },
 purge: {
     enabled: true,
-    content: ['./build/**/*.html'],
+    content: [
+      './build/**/*.js',
+      './build/**/*.html',
+    ],
   }
 ,
   theme: {
