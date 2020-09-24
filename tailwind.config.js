@@ -3,7 +3,11 @@ module.exports = {
     removeDeprecatedGapUtilities: true,
     purgeLayersByDefault: true,
   },
-purge: ['./build/*.html'],
+purge: {
+    enabled: true,
+    content: ['./build/**/*.html'],
+  }
+,
   theme: {
     extend: {
       fontFamily: {
