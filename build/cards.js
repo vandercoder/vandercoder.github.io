@@ -58,7 +58,7 @@ function insertProjects(stackProjects) {
     // img.setAttribute("alt", projectContent[1]);
 
     cardMain.style.backgroundImage =
-      "url(/resources/videos/screenshot/" + projectContent[0] + ".png)";
+      "url(./resources/videos/screenshot/" + projectContent[0] + ".png)";
 
     let videoSrc = card.querySelector("video source");
     let videoPath = "./resources/videos/" + projectContent[0] + ".mp4";
@@ -71,7 +71,7 @@ function insertProjects(stackProjects) {
     cardContent.textContent = projectContent[3];
 
     let cardStack = card.querySelector(".card-stack");
-    cardStack.textContent = "Stack: " + projectContent[4];
+    cardStack.textContent = "Made using: " + projectContent[4];
 
     let liveLink = card.querySelector(".live-link");
     liveLink.setAttribute("href", projectContent[5]);

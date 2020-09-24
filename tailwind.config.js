@@ -1,10 +1,13 @@
 module.exports = {
-  purge: [],
+  future: {
+    removeDeprecatedGapUtilities: true,
+    purgeLayersByDefault: true,
+  },
+purge: ['./build/*.html'],
   theme: {
     extend: {
       fontFamily: {
-        'roboto' : ['Roboto', 'sans-serif'],
-        'lato' : ['Lato', 'sans-serif'],
+        'ubuntu' : ['Ubuntu', 'sans-serif'],
       },
       fontSize: {
         '1vw' : '1vw',
