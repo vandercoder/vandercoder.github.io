@@ -1,14 +1,10 @@
 module.exports = {
-  purge: ['./build/*.html',],
+  purge: [],
   theme: {
     extend: {
-      colors: {
-        'black-200': '#0B0B0B',
-        'black-100': '#242424',
-        'red-pink': '#EB3352'
-      },
       fontFamily: {
-        'montserrat' : ['Montserrat', 'sans-serif'],
+        'roboto' : ['Roboto', 'sans-serif'],
+        'lato' : ['Lato', 'sans-serif'],
       },
       fontSize: {
         '1vw' : '1vw',
