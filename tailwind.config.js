@@ -37,7 +37,6 @@ purge: {
         '60': '0.6'
       },
     },
-    
   },
   variants: {},
   plugins: [],
