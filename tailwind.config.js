@@ -16,6 +16,10 @@ purge: {
       fontFamily: {
         'ubuntu' : ['Ubuntu', 'sans-serif'],
       },
+      colors: {
+        'black-200': '#0B0B0B',
+        'black-100': '#242424',
+      },
       fontSize: {
         '1vw' : '1vw',
         '1.2vw' : '1.2vw',
