@@ -15,7 +15,8 @@
     "js-yaml": "^3.14.0",
     "postcss-cli": "^7.1.1",
     "postcss-modules": "^3.2.0",
-    "tailwindcss": "^1.5.1"
+    "tailwindcss": "^1.5.1",
+    "y18n": ">=4.0.1"
   },
   "devDependencies": {
     "prettier": "2.1.1"
